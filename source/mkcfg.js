@@ -3,6 +3,12 @@ class v2ray {
         this.log = {
         };
         this.api = {
+            tag: "api",
+            services: [
+                "HandlerService",
+                "LoggerService",
+                "StatsService"
+            ]
         };
         this.dns = {
         };
