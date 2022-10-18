@@ -12,8 +12,8 @@ import fs from 'fs';
 async function savecfg(cfg,region) {
     const data = JSON.stringify(cfg, null, 4);
     try {
-        fs.writeFileSync('cfg_'+region+'.json', data);
-        console.log("JSON data is saved.");
+        fs.writeFileSync('cfg_'+region.name+'.json', data);
+        console.log("JSON data is saved to " + 'cfg_'+region.name+'.json');
     } catch (error) {
         console.error(error);
     }
