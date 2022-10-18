@@ -91,7 +91,7 @@ function mkcfg(nodes,regionPort) {
     var cfg = new v2ray;
     var inbound = new inboundsObject;
     inbound.port = regionPort;
-    inbound.tag = regionPort;
+    inbound.tag = "socks" + regionPort;
     cfg.inbounds.push(inbound);
     var outbound = new outboundsObject;
     outbound.settings.vnext = nodes;
