@@ -239,3 +239,4 @@ node_modules/yaml/dist/stringify/stringifyPair.js
 node_modules/yaml/dist/stringify/stringifyString.d.ts
 node_modules/yaml/dist/stringify/stringifyString.js
 config.yaml
+cfg_[object Object].json
