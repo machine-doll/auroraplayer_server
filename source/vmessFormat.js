@@ -38,4 +38,4 @@ function vmessFormat(ob){
 		return defaultV;
 	}
 }
-module.exports = vmessFormat;
+export default vmessFormat;

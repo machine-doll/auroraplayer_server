@@ -7,4 +7,4 @@ function parse(s){
 	}
 }
 
-module.exports = parse;
+export default parse;

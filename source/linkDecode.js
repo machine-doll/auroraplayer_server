@@ -1,4 +1,4 @@
-var decode = require('./decode.js');
+import decode from './decode.js';
 function linkDecode(s){
 	//judge if supported link
 	if(s.startsWith("vmess://")){
@@ -11,4 +11,4 @@ function linkDecode(s){
 		console.warn("a illegal link: "+ `${s}`);
 	}
 }
-module.exports = linkDecode;
+export default linkDecode;

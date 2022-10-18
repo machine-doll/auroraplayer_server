@@ -1,0 +1,162 @@
+#请先修改订阅链接
+sub: "https://sublink.com"
+regions:
+  - "hk"
+  - "tw"
+  - "th"
+  - "cn"
+
+region:
+  - "hk":
+    name: "hk"
+    keyword:
+    - "香港"
+    - "hk"
+    - "hongkong"
+    - "hong kong"
+    port: 7891
+    keyword_exclude:
+    - "IEPL"
+    - "IPLC"
+  - "tw":
+    name: "tw"
+    keyword:
+    - "台湾"
+    - "台灣"
+    - "tw"
+    - "taiwan"
+    port: 7892
+    keyword_exclude:
+    - "IEPL"
+    - "IPLC"
+  - "th":
+    name: "th"
+    keyword:
+    - "泰国"
+    - "泰國"
+    - "th"
+    - "thailand"
+    - "thai land"
+    - "thai"
+    - "新加坡"
+    - "singapore"
+    - "sg"
+    - "马来西亚"
+    - "malaysia"
+    - "my"
+    - "菲律宾"
+    - "菲律賓"
+    - "philippines"
+    - "ph"
+    - "印度尼西亚"
+    - "印度尼西亞"
+    - "indonesia"
+    - "id"
+    - "越南"
+    - "vietnam"
+    - "vn"
+    port: 7893
+    keyword_exclude:
+    - "IEPL"
+    - "IPLC"
+  - "cn":
+    name: "cn"
+    keyword:
+    - "中国"
+    - "中國"
+    - "cn"
+    - "china"
+    - "chinese"
+    - "mainland"
+    - "大陆"
+    - "大陸"
+    - "回国"
+    - "回國"
+    - "回家"
+    - "上海"
+    - "shanghai"
+    - "重庆"
+    - "chongqing"
+    - "北京"
+    - "beijing"
+    - "天津"
+    - "tianjin"
+    - "广东"
+    - "guangdong"
+    - "广西"
+    - "guangxi"
+    - "海南"
+    - "hainan"
+    - "河北"
+    - "hebei"
+    - "河南"
+    - "henan"
+    - "黑龙江"
+    - "黑龍江"
+    - "heilongjiang"
+    - "湖北"
+    - "hubei"
+    - "湖南"
+    - "hunan"
+    - "吉林"
+    - "jilin"
+    - "江苏"
+    - "jiangsu"
+    - "江西"
+    - "jiangxi"
+    - "辽宁"
+    - "遼寧"
+    - "liaoning"
+    - "内蒙古"
+    - "內蒙古"
+    - "neimenggu"
+    - "宁夏"
+    - "寧夏"
+    - "ningxia"
+    - "青海"
+    - "qinghai"
+    - "山东"
+    - "shandong"
+    - "山西"
+    - "shanxi"
+    - "陕西"
+    - "陝西"
+    - "shanxi"
+    - "四川"
+    - "sichuan"
+    - "西藏"
+    - "西藏"
+    - "xizang"
+    port: 7890
+    keyword_exclude:
+    - "中转"
+    - "中轉"
+    - "中转机场"
+    - "中轉機場"
+    - "落地"
+    - "落地機場"
+    - "落地机场"
+    - "转机"
+    - "轉機"
+    - "内部专用"
+    - "內部專用"
+    - "内部专用机场"
+    - "內部專用機場"
+#默认配置
+v2raycfg:
+  log:
+    loglevel: warning
+  dns:
+  inbound:
+    listen: 127.0.0.1
+    port: 1080
+    protocol: socks
+    settings:
+      auth: noauth
+      udp: true
+      ip: 127.0.0.1
+  outbouds:
+    - protocol: vmess
+      settings:
+        vnext:
+  

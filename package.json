@@ -3,9 +3,13 @@
   "version": "1.0.0",
   "description": "a set of tools to A set of tools to lift the regional restrictions on streaming platforms",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "machine-doll",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "yaml": "^2.1.3"
+  }
 }

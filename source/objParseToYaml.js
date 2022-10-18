@@ -5,4 +5,4 @@ function objParseToYaml(ob){
 	var s = JSON.stringify(ob);
 	return s;
 }
-module.exports = objParseToYaml;
+export default objParseToYaml;

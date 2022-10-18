@@ -1,2 +1,2 @@
-let main = require('./source/main.js');
+import main from './source/main.js';
 main();

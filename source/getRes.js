@@ -1,9 +1,9 @@
-const { verify } = require("crypto")
-const http = require("http");
-const https = require("https");
+import { Verify } from "crypto";
+import http from "http";
+import https from "https";
 /* handle subscribe link, get the response
  * @param url
- * @return Promise resove(string)
+ * @return Promise resolve(string)
  */
 function getRes(url){
 	if(typeof url !== "string" || !(url.startsWith("http://") || url.startsWith("https://"))){
@@ -39,4 +39,4 @@ function getRes(url){
 		});
 	});
 }
-module.exports = getRes;
+export default getRes;

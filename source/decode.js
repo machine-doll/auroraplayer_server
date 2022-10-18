@@ -9,4 +9,4 @@ function decode(s){
 	return buf.toString('utf8');
 }
 
-module.exports = decode;
+export default decode;
