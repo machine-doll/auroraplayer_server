@@ -1,6 +1,6 @@
 import savecfg from './savecfg.js';
 import handleSubData from './handleSubData.js';
-import nodeFilter from './nodeFilter.bak';
+import nodeFilter from './nodeFilter.js';
 import mkcfg from './mkcfg.js';
 import startv2ray from './startv2ray.js';
 import YAML from 'yaml'
