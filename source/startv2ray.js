@@ -10,7 +10,7 @@ async function startv2ray(cfg){
 			console.log(`stderr: ${stderr}`);
 		});
 	} else if(process.platform == 'linux'){
-		exec('./v2ray -config '+ cfg.toString(), (err, stdout, stderr) => {
+		exec('./v2ray run -c '+ cfg.toString(), (err, stdout, stderr) => {
 			if (err) {
 				console.error(`exec error: ${err}`);
 				return;
