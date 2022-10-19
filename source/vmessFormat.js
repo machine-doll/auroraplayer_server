@@ -1,6 +1,5 @@
 class outboundsObject {
     constructor() {
-        this.sendThrough = "0.0.0.0";
         this.protocol = "vmess";
         this.settings = {
             vnext: [
@@ -24,6 +23,7 @@ class outboundsObject {
             security: "none",
 			tlsSettings: {
 				allowInsecure: false,
+				serverName: "v2ray.com"
 			},
             wsSettings: {
 				acceptProxyProtocol: false,
@@ -102,6 +102,8 @@ function vmessFormat(ob){
 			}else if(key=="verify_cert"){
 				defaultV.streamSettings.tlsSettings.allowInsecure = !ob[key];
 				defaultV.streamSettings.wsSettings.allowInsecure = !ob[key];
+			}else if(key=="localserver"){
+				defaultV.streamSettings.tlsSettings.serverName = ob[key];
 			}
 		}
 		return defaultV;

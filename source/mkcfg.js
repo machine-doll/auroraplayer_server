@@ -67,7 +67,7 @@ class balancerObject {
 class v2ray {
     constructor() {
         this.log = {
-            loglevel: "warning",
+            loglevel: "debug",
             access: "",
             error: "",
         };
@@ -132,7 +132,7 @@ class inboundsObject {
     constructor() {
         this.listen = "127.0.0.1";
         this.port = 1080;
-        this.protocol = "socks";
+        this.protocol = "http";
         this.settings = {
             auth: "noauth",
             ip: "127.0.0.1",
@@ -202,14 +202,7 @@ class outboundsObject {
                 headers: {
                 }
             },
-            skipCertVerify: false,
 
-        };
-        this.proxySettings = {
-        };
-        this.mux = {
-            enabled: true,
-            concurrency: 8
         };
     }
 }
